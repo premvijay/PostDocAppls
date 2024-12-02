@@ -1,0 +1,94 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{../aas_macros}
+\usepackage{amsmath, amssymb, graphicx}
+\usepackage{setspace}
+% \usepackage[numbers]{natbib}
+% \bibliographystyle{unsrtnat}
+\usepackage[style=numeric,sorting=ynt]{biblatex}
+\addbibresource{../refers.bib}
+
+\geometry{left=.45in, top=.75in, right=.5in, bottom=.8in, footskip=.5cm}
+
+\title{Research Statement}
+\author{Premvijay Velmani}
+\date{November, 2024}
+
+
+
+\begin{document}
+
+
+\maketitle
+
+
+\section{Overview}
+\subsection{Current Research}
+My research focuses on cosmology and large-scale structure to galactic astrophysics through both \textbf{cosmological simulations with full galaxy formation} prescription and more tractable numerical experiments of \textbf{dark matter haloes with galaxies}. Primarily, \textit{I study the dynamics and evolution of dark matter haloes within the cosmic web focusing on how these structures interact with the astrophysical processes associated with galaxy formation and evolution}. In the ongoing research in cosmology and dark matter physics, the response of dark matter haloes to galaxies is frequently neglected or, at best, considered as nuisance parameters, modelled empirically based on specific simulations. My current work helps build a \textbf{comprehensive physical model of this halo response to galaxies} that is one of the key ingredients in ab initio modelling of the dark matter haloes. Additionally, by bridging galactic astrophysics with cosmology, this will also contribute to a better understanding of the formation and evolution of galaxies, including their dynamical interaction with their host dark matter haloes. In this regard, I have also obtained self-similar solutions to galaxy formation, interacting with its host dark matter halo.
+
+\subsection{Proposal statement}
+My primary research plan is to further understand and model the relaxation response of dark matter radial distribution to galaxies. Given that some of the key features have already been identified in my recent works \cite{2023MNRAS.520.2867V,2024arXiv240708030V,2024arXiv240804864V}, I expect to obtain a simple and realistic model of this with a few more measurements from cosmological simulations with galaxies. Further, by generalising the more tractable halo-galaxy systems \cite{2024JCAP...05..080V}, I expect to reproduce this relaxation response behaviour ab initio and provide a clear physical description for this model. 
+
+After establishing a simple, physical and accurate model for the response in the radial distribution, I would then try to also model response in the angular distribution (determining halo shapes) and velocity distribution, by following this approach of using a combination of simulations and other numerical experiments.
+
+I also look forward to collaborate in exploring various other interesting questions about the dark matter haloes, galaxies and other objects that build the large-scale structure of the Universe.
+
+\subsection{Research Expertise}
+
+\begin{quote}
+    \textit{With strong expertise in cosmological simulations with and without galaxy formation, I primarily look forward to doing both inference-based simulations to build better theoretical understanding and simulations-based inference in estimating interesting quantities from large-scale surveys.}
+\end{quote}
+
+During the course of my PhD research, I have performed cosmological simulations, including hydrodynamical ones that include some of the baryonic astrophysical processes such as cooling and star formation. I have primarily worked with various large simulation particle data such as IllustrisTNG, EAGLE, and CAMELS. I have also used structure finding codes to generate halo catalogues with merger trees and developed a kdtree-based algorithm to match them between different simulations of the same initial cosmological volumes. I have also developed codes to generate field information from simulation particle data, for both visualizing and computing cosmological quantities such as the matter power spectrum and halo/galaxy properties such as mass profiles and shapes. I have performed various statistical techniques, such as computing the correlation functions in multiple dimensions. 
+
+I have obtained novel self-similar solutions of interacting dark matter halo and the formation and evolution of galaxy pseudo-disk. Extending the iterative mean field techniques employed in this approach, I also perform other numerical experiments in a more general case that can be directly compared against corresponding simulations. In a mini project done with Prof. Hector marin, I have inferred cosmological parameters from eBOSS and mock DESI data. I am currently working in a data science collaboration focused on using machine learning techniques in cosmological data compression and inference. In another collobaration, I am working on the effect of supermassive black holes on the nature and the evolution of overall dark matter in the haloes.
+
+\section{Key Contributions of My PhD Research}
+
+In my PhD thesis titled, "Interplay of galaxy formation and dark matter halo evolution in the cosmic web", I have done the following research with Prof. Aseem Paranjape.
+
+\begin{itemize}
+    \item \textbf{Halo Relaxation Response in the cosmic web:} Through statistical analysis of a large number of haloes in cosmological simulations IllustrisTNG and EAGLE, we have developed models of quasi-adiabatic relaxation that accurately predicts the change in the dark matter radial distribution in response to the galaxy formation and evolution. These results also revealed the significance of feedback-related effects on the relaxation response and explicit dependence on halo-centric distance. This model provides an accurate fit to the relaxation responses observed in simulations of dark matter haloes and assists in the physical interpretation of the relaxation across a variety of haloes.
+    
+    \item \textbf{Role of Astrophysical processes and epoch:} Through an extensive collection of CAMELS simulations, we identified that not all but some of the simulation parameters controlling the feedback had a strong effect on the halo relaxation, and this is also significantly different at different redshifts.
+    
+    \item \textbf{Dynamics of the Relaxation:}  We have studied the evolutionary history of the relaxation of haloes across cosmic time along with its correlation with evolving halo and galaxy properties. This revealed that the relaxation response on the halo manifests immediately in the inner halo regions and with a time delay of around 2–3 Gyr in the outer halo regions, followed by periods of star formation activity. This explains the emergence of the dependence on the halo-centric distance at a given cosmic time.
+    
+    \item \textbf{Self-Similar Model for Halo-Galaxy Interplay:} We have obtained spherical self-similar solutions of mutually interacting dark matter halo and gas that radiatively cools and forms a pseudo galaxy disk with an artificial viscosity. With this more tractable approach to experiment and understand the relaxation mechanism, we also obtained relaxation response relations consistent with full simulations.
+\end{itemize}
+
+\section{Research Proposal}
+Building on my expertise in the astrophysical impacts on dark matter haloes, I plan to pursue several key avenues of research in a postdoctoral position:
+
+\begin{enumerate}
+    \item \textbf{Time-Correlation Analysis of Galaxy-Halo Interactions:} My primary research plan is to explore the dynamics of the relaxation response further and extend the time-correlation analyses to examine how specific galaxy properties, such as those associated with AGN feedback, impact the relaxation of dark matter haloes. Through this work, I aim to capture the immediate and long-term effects of feedback processes, exploring how changes in galaxy mass distribution, star formation rates, and energy feedbacks affect the relaxation response of the dark matter halo at different halo-centric distances.
+
+    \item \textbf{Numerical Experiments on Galaxy-Halo System Dynamics:} I am particularly interested in conducting controlled numerical experiments with simplified galaxy-halo-like systems to track the orbital evolution of dark matter test particles. By simulating responses to varying gravitational potentials that mimic galaxy formation processes, I aim to model timescales for halo relaxation and the dynamic response at different halo-centric distances. These findings can contribute to more physically motivated models for the relaxation dynamics of haloes, incorporating both spatial dependencies and feedback-related timescales.
+
+    % \item \textbf{Hydrodynamical and Zoom Simulations for Galaxy-Halo Studies:} To support these goals, I also plan to run cosmological (zoom-in) simulations with full hydrodynamics and galaxy formation prescriptions. One of the interesting things to me is to perform simulations where the baryonic prescription is altered at specific timesteps during the course of the simulation and see how things respond to that change, especially the dark matter distribution in haloes.
+\end{enumerate}
+
+\subsection{Additional Areas of Interest}
+Beyond my primary research goals, I am eager to contribute to collaborative efforts that study other facets of dark matter distribution within simulations. This includes analyzing the power spectrum, halo-filament connectivity, and halo population statistics, especially as they relate to the distribution of galaxies in the cosmic web. I am also interested in roles that involve running mock simulations for current and upcoming large-scale surveys such as EUCLID and DESI, where insights from simulations can play a crucial role in interpreting observational data on galaxy clustering, gravitational lensing, and cosmic shear. I list below some of my long-term research plans.
+
+\textbf{1. Include halo shapes to physical model of relaxation:}  
+I aim to build a physical and accurate of response in halo shapes to the formation and evolution of galaxies
+
+\textbf{2. Investigating Halo Substructure Evolution:}  
+I will study how baryonic processes affect subhalo dynamics and tidal stripping within massive dark matter haloes, particularly in the context of satellite galaxy evolution.
+
+\textbf{3. Collaboration with Upcoming Surveys:}  
+I will work on integrating simulation results with upcoming surveys such as LSST and Euclid, helping to bridge the gap between observational data and theoretical predictions of dark matter distribution and galaxy formation.
+
+\textbf{4. Application to Baryonification Schemes:}  
+Incorporating the knowledge gained from detailed simulations into efficient baryonification schemes for fast cosmological predictions.
+
+\textbf{5. Exploring Alternative Dark Matter Models:}  
+I also intend to explore how alternative dark matter models, such as self-interacting dark matter (SIDM), alter the relaxation properties of haloes and how these can be distinguished from standard cold dark matter (CDM) in both simulations and observations.
+
+\section{Conclusion}
+By combining my experience with large-scale cosmological simulations and theoretical modelling, I aim to advance our understanding of the role different baryonic astrophysics play in mediating the response of dark matter haloes to galaxies. I am enthusiastic about the opportunity to advance our understanding of galaxy-halo interactions through the lens of both cosmology and astrophysics. My background in running and analyzing cosmological simulations, with and without galactic astrophysics, positions me to start contributing to projects that bridge astrophysics and cosmology immediately. I look forward to working within a collaborative environment where I can further develop my expertise in cosmology and galactic astrophysics and contribute to our knowledge of the evolving universe.
+
+\printbibliography
+
+\end{document}
