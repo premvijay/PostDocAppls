@@ -8,3 +8,6 @@
 *.log
 *.aux
 *.out
+*.snm
+*.nav
+*.toc
