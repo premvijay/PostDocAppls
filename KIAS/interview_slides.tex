@@ -2,7 +2,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{hyperref}
-\usepackage{amsmath}
+\usepackage{amsmath,amssymb}
+% \usepackage{geometry}
 \usepackage{tikz}
 \usepackage{multicol}
 \usetheme{Boadilla}
@@ -66,8 +67,8 @@
         \item Joined IUCAA Pune for PhD in August 2019 and did one year gradschool training in modern astrophysics research.
         \item Started working with Prof. Aseem in 2020. I did comprehensive exploration with cosmological simulations for 1 year and proposed my thesis work.
         \item Worked on my thesis "Interplay of galaxy formation and the evolution of dark matter haloes" for 3 years from 2021 to 2024. Now approved for defence in next month.
-        \item As I got 1 more year at IUCAA till July 2025, I continued my research after thesis submission and came up with solid long-term research plans. 
-        \item Thanks to the recent KIAS Cosmology workshop, I got to know about your research. I am confident that KIAS has sufficient resources and expertise to get interesting results with these research plans.
+        \item As I got another year at IUCAA till July 2025, I continued my research after thesis submission and came up with well-defined long-term research plans. 
+        \item Recent KIAS Cosmology workshop, got me know more about the interesting research works over there. I am confident that KIAS has sufficient resources and expertise to get interesting results with these research plans.
     \end{itemize}
 \end{frame}
 
@@ -123,68 +124,29 @@
         \item Enhance time-correlation methods to study baryonic feedback in dark matter haloes.
         \item Develop and implement \textbf{cosmological MHD simulations} for better theoretical modeling.
         \item Investigate galaxy-halo connections with a focus on AGN-driven relaxation processes.
-        \item Run mock simulations to improve interpretations of observations from large-scale surveys.
     \end{itemize}
 \end{frame}
 
-% Slide 5: Why KIAS?
-\begin{frame}{Why KIAS?}
-    \begin{itemize}
-        \item Aligns with my research focus on dark matter haloes and galaxy formation.
-        \item Opportunity to collaborate with experts in theoretical and computational astrophysics.
-        \item Access to resources and a vibrant academic environment.
-        \item Chance to contribute to cutting-edge cosmological research.
-    \end{itemize}
+    
+
+
+\begin{frame}{Hydrodynamical simulations with galaxies} 
+\begin{itemize}
+    \item In simulations, the phase-space distribution of dark matter within the haloes have also been found to be significantly different and diverse indicating strong response to galaxies they host.
+\end{itemize}
+\begin{tikzpicture}[node distance=2cm]
+    \node (start) [rectangle, draw, text width=3.5cm, align=center, fill=blue, rounded corners] {\textcolor{yellow}{Gravitational collapse of an over-dense region}};
+    \node (halo) [rectangle, draw, right of=start, xshift=2cm, text width=3.5cm, align=center, fill=blue, rounded corners] {\textcolor{yellow}{Halo forms in the cosmic web}};
+    \node (galaxy) [rectangle, draw, right of=halo, xshift=2cm, text width=3.5cm, align=center, fill=blue, rounded corners] {\textcolor{yellow}{Assembly of baryons forms galaxy within the halo}};
+    
+    \draw[->] (start) -- (halo);
+    \draw[->] (halo) -- (galaxy);
+    
+    \node (feedback) [rectangle, draw, below of=halo, xshift=2cm, text width=3.5cm, align=center, fill=yellow, rounded corners] {\textcolor{blue}{Back-reaction on the halo}};
+    \draw[->, dashed] (galaxy) -- (feedback);
+    \draw[->, dashed] (feedback) -- (halo); 
+\end{tikzpicture}
 \end{frame}
-
-% Slide 6: Summary
-\begin{frame}{Summary}
-    \begin{itemize}
-        \item Extensive experience in cosmological simulations and astrophysical modeling.
-        \item Strong focus on understanding baryonic impacts on dark matter dynamics.
-        \item Excited to contribute to KIAS's research goals while pursuing innovative directions.
-        \item Looking forward to discussing my research and ideas further.
-    \end{itemize}
-\end{frame}
-
-
-
-% \begin{frame}{Introduction}
-%     \begin{itemize}
-%         \item As matter clumps over overdensities due to gravity, the baryons cool and condense to form galaxies, leaving extended objects of dark matter haloes in the common paradigm of cosmology.
-%         \item These haloes are crucial in studying cosmology and dark matter particle physics, and are often modelled without any baryonic astrophysics using techniques like cosmological N-body simulations.
-%         \item Modeling galaxy formation does depend upon these haloes using for example semi-analytical techniques. 
-%     \end{itemize}
-    
-
-% \begin{tikzpicture}[node distance=2cm]
-%     \node (start) [rectangle, draw, text width=3.5cm, align=center, fill=blue, rounded corners] {\textcolor{yellow}{Gravitational collapse of an over-dense region}};
-%     \node (halo) [rectangle, draw, right of=start, xshift=2cm, text width=3.5cm, align=center, fill=blue, rounded corners] {\textcolor{yellow}{Halo forms in the cosmic web}};
-%     \node (galaxy) [rectangle, draw, right of=halo, xshift=2cm, text width=3.5cm, align=center, fill=blue, rounded corners] {\textcolor{yellow}{Assembly of baryons forms galaxy within the halo}};
-    
-%     \draw[->] (start) -- (halo);
-%     \draw[->] (halo) -- (galaxy);
-% \end{tikzpicture}
-    
-% \end{frame}
-% \begin{frame}{Introduction: Hydrodynamical simulations with galaxies} 
-% \begin{itemize}
-%     \item Realistic galaxies are produced by modern hydrodynamical simulations of cosmological volumes with various subgrid baryonic prescriptions for the unresolved baryonic astrophysics such as in EAGLE, IllustrisTNG, Horizon, SIMBA, etc.
-%     \item In these simulations, the phase-space distribution of dark matter within the haloes have also been found to be significantly different and diverse indicating strong response to galaxies they host.
-% \end{itemize}
-% \begin{tikzpicture}[node distance=2cm]
-%     \node (start) [rectangle, draw, text width=3.5cm, align=center, fill=blue, rounded corners] {\textcolor{yellow}{Gravitational collapse of an over-dense region}};
-%     \node (halo) [rectangle, draw, right of=start, xshift=2cm, text width=3.5cm, align=center, fill=blue, rounded corners] {\textcolor{yellow}{Halo forms in the cosmic web}};
-%     \node (galaxy) [rectangle, draw, right of=halo, xshift=2cm, text width=3.5cm, align=center, fill=blue, rounded corners] {\textcolor{yellow}{Assembly of baryons forms galaxy within the halo}};
-    
-%     \draw[->] (start) -- (halo);
-%     \draw[->] (halo) -- (galaxy);
-    
-%     \node (feedback) [rectangle, draw, below of=halo, xshift=2cm, text width=3.5cm, align=center, fill=yellow, rounded corners] {\textcolor{blue}{Back-reaction on the halo}};
-%     \draw[->, dashed] (galaxy) -- (feedback);
-%     \draw[->, dashed] (feedback) -- (halo); 
-% \end{tikzpicture}
-% \end{frame}
 
 \begin{frame}{Dark matter halo response to galaxies}
     A halo from EAGLE simulation in the presence of galaxy (left image) can be seen more compact, spherical and even their centres shifted.
@@ -194,60 +156,37 @@
     In particular, the change in the halo-centric distances affects radial mass profiles of haloes that influence key observables such as the rotation curves and radial acceleration relations.
 \end{frame}
 
-\begin{frame}{Relaxation response physics}
-\begin{itemize}
-        \item Early works modeled this as adiabatic relaxation of dark matter in response to the \textbf{\color{red}net} change in the gravitational potential due to galaxy formation.
-        \item Consider a dark matter particle in circular orbit starting from radius $r_i$ and adiabatically (conserving angular momentum) evolving to radius $r_f$ caused by change in sphericalised total mass profile from $M_i(r)$ to $M_f(r)$ due to galaxy, then
-        \begin{align*}
-            r_i \,M_i(r_i) = r_f \,M_f(r_f) % 
-            \implies 
-            \frac{r_f}{r_i} = \frac{M_i(r_i)}{M_f(r_f)}\,. 
-        \end{align*}
-        \item By assuming no shell crossing, these quantities can be calculated by the comparing total and dark matter mass profile in the presence and absence of galaxies using the relation $M_f^d(r_f) = M_i^d(r_i)$.
-        % \item Consider a shell enclosing a \emph{dark matter} mass $M_i^d(r_i)$ at radius $r_i$ in the unrelaxed halo. After relaxation, the radius of the shell changes to $r_f$. Assuming no-shell crossing, $M_f^d(r_f) = M_i^d(r_i)$.
-        % \item If angular momentum is conserved and the dark matter particle orbits stay circular, then,c
-        \item Quasi-adiabatic relaxation models consider the relaxation ratio $r_f/r_i$ as a function of the mass ratio $M_i/M_f$.
+
+\begin{frame}{Relaxation response in IllustrisTNG and EAGLE}
+\begin{columns}
+\begin{column}{0.49\linewidth}
+    \begin{itemize}
+        \item Early works modeled this as adiabatic relaxation of dark matter in response to the net change in the gravitational potential due to galaxy formation.
+        \item Quasi-adiabatic relaxation framework focus on modelling the relation between the relaxation ratio $r_f/r_i$ as a function of the mass ratio $M_i/M_f$.
+        \item We found that the relaxation relation (between $r_f/r_i$ and $M_i/M_f$) varies widely between haloes of different mass scales in simulations like IllustrisTNG and EAGLE.
     \end{itemize}
-\end{frame}
-
-
-\begin{frame}{Relaxation in IllustrisTNG and EAGLE}
-    \begin{columns}
-        \begin{column}{0.4\linewidth}
-            \begin{itemize}
-                \item We found that the relaxation relation (between $r_f/r_i$ and $M_i/M_f$) varies widely between haloes of different mass scales in IllustrisTNG and EAGLE.
-                \item Existing quasi-adiabatic framework failed to provide a simple description across all scales.
-            \end{itemize}
-            
-        \end{column}
-        \begin{column}{0.59\linewidth}
-            \begin{center}
-                \includegraphics[width=0.99\linewidth]{plots/fit_view_M_T.pdf}
-            \end{center}
-            \begin{center}
-                \includegraphics[width=0.55\linewidth]{plots/Mass_bin_labels_enlarged.pdf}
-            \end{center}
-        \end{column}
-    \end{columns}
+    
+\end{column}
+\begin{column}{0.5\linewidth}
+    \begin{center}
+        \includegraphics[width=0.99\linewidth]{plots/fit_view_M_T.pdf}
+    \end{center}
+    \begin{center}
+        \includegraphics[width=0.55\linewidth]{plots/Mass_bin_labels_enlarged.pdf}
+    \end{center}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}{Dependence on halo centric distance}
-    \begin{columns}
-        \begin{column}{0.63\linewidth}
-            \begin{itemize}
-                \item A simple linear relation can accurately describe the relaxation, provided we assume an additional explicit dependence on the halo-centric distance.
-                \item Notice that the exact nature of the relation is very different at different halo-centric distances (indicated by colorbar) for some halo masses, but they are all strongly linear.
-            \end{itemize}
-            \includegraphics[clip,trim={0cm 0cm 0.5cm 0.5cm},width=0.49\linewidth]{plots/fit_show_rf_M_T300_M14.pdf}
-            \includegraphics[clip,trim={0cm 0cm 0.5cm 0.3cm},width=0.49\linewidth]{plots/fit_show_rf_M_T100_M12.5.pdf}
-        \end{column} %\pause
-        \begin{column}{0.36\linewidth}
-            \begin{center}
-                \includegraphics[width=0.998\linewidth]{plots/fit_show_rf_M_T50_M11.pdf}\\
-                \includegraphics[width=0.998\linewidth]{plots/fit_show_rf_M_E25_M11.pdf}
-            \end{center}
-        \end{column}
-    \end{columns}
+\begin{itemize}
+    \item A simple linear relation can accurately describe the relaxation, provided we assume an additional explicit dependence on the halo-centric distance (indicated by colorbar).
+\end{itemize}
+\begin{center}
+    \includegraphics[clip,trim={0cm 0cm 0.5cm 0.3cm},width=0.32\linewidth]{plots/fit_show_rf_M_T100_M12.5.pdf}
+    \includegraphics[width=0.32\linewidth]{plots/fit_show_rf_M_T50_M11.pdf}
+    \includegraphics[width=0.32\linewidth]{plots/fit_show_rf_M_E25_M11.pdf}
+\end{center}
 \end{frame}
 
 
@@ -268,8 +207,6 @@
         \begin{column}{0.5\linewidth} 
             \begin{itemize}
                 \item Focusing on the intercept offset $q_0$, which describes the amount of relaxation $r_f/r_i-1$ for dark matter shells with no net change in the total enclosed mass $M_i/M_f=1$.
-                % \item By tracing the evolutionary history of matched haloes, we could probe the dynamical evolution of the relaxation response of the dark matter halo to galaxy formation. 
-                % \item The mean intercept parameter $q_0$ in the linear relaxation relation, describing the amount of relaxation $r_f/r_i-1$ for dark matter shells with no net change in the total enclosed mass $M_i/M_f=1$, is shown as a function of time (color indicates halo mass).
                 \item It starts at zero, becomes more negative initially, but then apparently revert slowly back to zero.
             \end{itemize}
         \end{column}
@@ -306,22 +243,23 @@
 \end{frame}
 
 \begin{frame}{Temporal Connection with Astrophysics}
-    \begin{columns}
-        \begin{column}{0.45\linewidth}
-            Spearman-rank correlation between $Q_0 \equiv -q_0$ and mean SFR across a variety of haloes over long periods of time at different final halo masses suggests that the offset is typically stronger following periods of high star formation activity.
-        \end{column}
-        \begin{column}{0.55\linewidth}
-            \begin{center}
-                \includegraphics[width=.95\linewidth]{plots/dynam_relxn/Spea_correl_vs_shift_betw_q0-SFR_fullcorr.pdf}
-            \end{center}
-        \end{column}
-    \end{columns} 
-    \pause
-    Additionally, we also found that the offset in the inner region is immediately affected by high SFR, while the outer regions are affected after around 2-3 Gyr. This likely explains the explicit dependence on the halo-centric distance.    
+\begin{columns}
+\begin{column}{0.45\linewidth}
+    \begin{itemize}
+        \item Correlation between relaxation response parameter is more strongly correlated to SFR and feedback at earlier times usually.
+        \item And this response time lag is progressively larger as we go towards the outer halo.
+    \end{itemize}
+\end{column}
+\begin{column}{0.54\linewidth}
+    \begin{center}
+        \includegraphics[width=.97\linewidth]{plots/dynam_relxn/Spea_correl_vs_shift_betw_q0-SFR_fullcorr.pdf}
+    \end{center}
+\end{column}
+\end{columns} 
 \end{frame}
 
 \begin{frame}{Role of Astrophysical Feedback}
-    Using the suite of CAMELS simulations with variation in feedback strengths, we found that the offset parameter $q_x$, which is inversely related to $q_0$, indeed strongly depends on the overall feedback flux from the galaxies. However, the parameters controlling the feedback burstiness and the wind speed have negligible impact on the relaxation offset as shown below.
+    We found that the relaxation response parameter ($q_x$ shown), indeed strongly depends on the overall feedback flux from the galaxies, but not the burstiness in CAMELS simulations.
     \begin{center}
         \includegraphics[clip,trim={0cm 0cm 0cm 10.5cm}, width=\linewidth]{plots/CAMELS_I_qx0.pdf}
     \end{center}
@@ -336,10 +274,31 @@
         \item Use analytical tools and semi-analytical experiments to build an entirely physical and accurate model of relaxation.
         \item Run galaxy forming cosmological simulations specially focussed on studying the dark matter halo relaxation response.
         \item Identify galaxy properties that keeps record of evolutionary history of galactic processes allowing accurate determination of dark halo response.
+    \end{itemize}
+\end{frame}
+
+% Slide 6: Summary
+\begin{frame}{Summary}
+    \begin{itemize}
+        \item Extensive experience in cosmological simulations and astrophysical modeling.
+        \item Strong focus on understanding baryonic impacts on dark matter dynamics.
+        \item Excited to contribute to KIAS's research goals while pursuing innovative directions.
+        \item Looking forward to discussing my research and ideas further.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{List of Publications}
+    \begin{itemize}
+        \item PremVijay Velmani, Aseem Paranjape, 2023, ``The quasi-adiabatic relaxation of haloes in the IllustrisTNG and EAGLE cosmological simulations", \textit{Published in MNRAS}.
+        \item PremVijay Velmani, Aseem Paranjape, 2024,``Dynamics of the response of dark matter halo to galaxy evolution in IllustrisTNG", submitted to JCAP, \textit{Accepted for publication in JCAP}.
+        \item PremVijay Velmani, Aseem Paranjape, 2024,``Role of astrophysical modeling on dark matter halo relaxation response at redshifts $z = 0$ and $z = 1$", \textit{submitted response to editor in JCAP}.
+        \item PremVijay Velmani, Aseem Paranjape, 2024, ``A self-similar model of galaxy formation and dark halo relaxation", \textit{Published in JCAP}.
+        \item Sujatha Ramakrishnan, PremVijay Velmani, 2022, ``Properties beyond mass for unresolved haloes across redshift and cosmology using correlations with local halo environment.", \textit{published in MNRAS}.
+    \end{itemize}
 \end{frame}
 
 
-% Slide 7: Thank You
+%% Slide 7: Thank You
 % \begin{frame}{Thank You!}
 %     \begin{center}
 %         \textbf{Questions?}\\[1em]
